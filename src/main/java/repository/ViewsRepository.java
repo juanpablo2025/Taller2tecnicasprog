@@ -1,7 +1,7 @@
 package repository;
 
-import model.ViewModel;
+import model.View;
 
 public interface ViewsRepository {
-    ViewModel add(ViewModel view);
+    View add(View view);
 }
