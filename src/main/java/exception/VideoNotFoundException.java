@@ -2,11 +2,11 @@ package exception;
 
 import java.text.MessageFormat;
 
-public class VideoNotFoundExeption extends CultureMediaException{
-    public VideoNotFoundExeption() {
+public class VideoNotFoundException extends CultureMediaException{
+    public VideoNotFoundException() {
         super("Video not found");
     }
-    public VideoNotFoundExeption(String title) {
+    public VideoNotFoundException(String title) {
         super(MessageFormat.format("The video {0} was not found", title));
     }
 }

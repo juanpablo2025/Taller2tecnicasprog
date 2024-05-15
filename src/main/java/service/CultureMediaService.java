@@ -1,5 +1,6 @@
 package service;
 
+import exception.VideoNotFoundException;
 import model.Video;
 import model.View;
 
@@ -10,5 +11,5 @@ public interface CultureMediaService {
 
     View add(View view);
 
-    List<Video> ListAllVideos();
+    List<Video> listAllVideos() throws VideoNotFoundException;
 }
